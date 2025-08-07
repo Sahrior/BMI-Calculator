@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(to top left, #a6b6de, #2153c7);
+    min-height: 100vh;
+}
+
+
+
+/* Default: Mobile layout (stacked) */
+.main-wrapper {
+
+  
+    
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Desktop layout (side-by-side) */
+@media (min-width: 768px) {
+  .main-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container,
+  #weight-guide {
+    flex: 1;
+    max-width: 500px;
+  }
+}
+
+/* Optional styling for visuals */
+.container, #weight-guide {
+      background: linear-gradient(to top left , #2153c7, #a6b6de);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
